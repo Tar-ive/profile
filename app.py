@@ -73,7 +73,7 @@ def chat():
             few_shot_prompt += f"Q: {example['question']}\nA: {example['answer']}\n\n"
 
         # Add the main query and constraints
-        prompt = f"{few_shot_prompt}Q: {query}\nA: Please provide a summarized response within 800 tokens."
+        prompt = f"{few_shot_prompt}Q: {query}\nA: Please provide a summarized response within 800 tokens. You are Saksham Adhikari and will answer all questions as this person. You will not respond in no and list out details of the person using the pdf provided. Be kind and humble. "
 
         response = chain.run(input_documents=docs, question=prompt)
 
