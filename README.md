@@ -23,9 +23,9 @@ The chatbot is designed to provide personalized responses to questions about me.
 
 ## Screenshots
 
-![Home Page](screenshots/Screenshot2024-06-19113103.png)
-![About Me Page](screenshots/Screenshot2024-06-19113403.png)
-![Chatbot](screenshots/Screenshot2024-06-19113143.png)
+![Home Page](screenshots/1.png)
+![About Me Page](screenshots/2.png)
+![Chatbot](screenshots/3.png)
 
 # Acknowledgements  
 Thanks to all the tutorials and resources that helped me learn and build this website.
