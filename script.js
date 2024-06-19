@@ -12,7 +12,7 @@ document.getElementById('send-btn').addEventListener('click', async () => {
     input.value = '';
 
     try {
-        const response = await fetch('http://127.0.0.1:8080/chat', {
+        const response = await fetch('https://spry-ether-426905-b1.uc.r.appspot.com/chat', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
