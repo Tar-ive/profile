@@ -35,6 +35,7 @@ Big thank you to Aditya Vikram Singht @ https://github.com/AVS1508/My-Alternate-
 # License
 This project is licensed under the MIT License. 
 
+# Reach Out and Help
 I had a great time building this website and integrating the chatbot. I hope you find it informative and engaging!
 
 For any issues or suggestions, please open an issue or contact me directly.
