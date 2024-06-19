@@ -28,7 +28,7 @@ The chatbot is designed to provide personalized responses to questions about me.
 ![Chatbot](screenshots/1.png)
 
 # Acknowledgements  
-Thanks to all the tutorials and resources that helped me learn and build this website.
+Thanks to all the tutorials and resources that helped me learn and build this website.  
 License
 This project is licensed under the MIT License. 
 
