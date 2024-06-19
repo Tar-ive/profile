@@ -32,7 +32,7 @@ Thanks to all the tutorials and resources that helped me learn and build this we
 
 Big thank you to Aditya Vikram Singht @ https://github.com/AVS1508/My-Alternate-Portfolio-Website for the website design template.   
 
-#License
+# License
 This project is licensed under the MIT License. 
 
 I had a great time building this website and integrating the chatbot. I hope you find it informative and engaging!
