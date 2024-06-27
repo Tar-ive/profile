@@ -12,10 +12,10 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-size: 100%;
+    font-size: 80%;
     line-height: 1.5;
     color: #555;
-    font-family: 'Georgia ', sans-serif
+    font-family: Georgia, serif;
 }
 
 article,
@@ -33,7 +33,7 @@ section {
 }
 
 h1 {
-    margin: .60em 0;
+    margin: .40em 0;
     font-size: 2rem;
 }
 
@@ -51,7 +51,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace;
+    font-family:Georgia, serif;
     font-size: 1em
 }
 
@@ -110,7 +110,7 @@ video {
   flex-direction:column; 
   justify-content: center;
   align-items: center;  
-  height:100%;
+  height:60%;
   
 }
 #chat-circle {
@@ -199,7 +199,7 @@ video {
   background: #f4f7f9;
   width:100%; 
   position:relative;
-  height:47px;  
+  height:30px;  
   padding-top:10px;
   padding-right:50px;
   padding-bottom:10px;
@@ -480,24 +480,21 @@ img {
     }
 
     #chat-box {
-        height: calc(100% - 40px); /* Adjust the height to fit within the container */
+        height: calc(50% - 30px); /* Adjust the height to fit within the container */
     }
 
     #chat-input {
-        width: calc(100% - 70px);
+        border: none;
+        border-top: 1px solid #ccc;
         padding: 10px;
-        border: 1px solid #444;
-        border-radius: 5px;
-        background-color: #333;
-        color: #fff;
-        margin-right: 10px;
+        width: calc(100% - 20px);
      /* Ensure the input field adjusts its width */
     }
 }
 
 .message {
     margin-bottom: 5px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
 }
 
@@ -553,7 +550,7 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: sans-serif;
+    font-family: Georgia, serif;
     font-size: 100%;
     line-height: 1.15;
     margin: 0
@@ -717,13 +714,13 @@ template {
     font-family: 'FontAwesome';
     src: url(../fonts/fontawesome-webfont.eot?v=4.7.0);
     src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(../fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(../fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"), url(../fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url(../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format("svg");
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal
 }
 
 .fa {
     display: inline-block;
-    font: 14px/1 FontAwesome;
+    font: 13px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -5273,7 +5270,7 @@ a img {
 }
 
 #particles-js {
-    background: ##50C878;
+    background: #50C878;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #50C878, #006400);
     /* Chrome 10-25, Safari 5.1-6 */
@@ -5299,7 +5296,7 @@ a img {
     text-align: center;
     color: #fff;
     position: absolute;
-    font-family: 'Rubik', sans-serif;
+    font-family:  Georgia, serif;
     width: 80%;
     top: 50%;
     left: 50%;
@@ -5309,7 +5306,7 @@ a img {
 }
 
 .header .site-title {
-    font-size: 35px;
+    font-size: 20px;
     display: block;
     line-height: 1;
     color: #fff;
@@ -5318,7 +5315,7 @@ a img {
 @media only screen and (min-width:550px) {
     .header .site-title {
         margin: 0;
-        font-size: 100px
+        font-size: 60px
     }
 }
 
@@ -5332,7 +5329,7 @@ a img {
 
 @media only screen and (min-width:550px) {
     .header .site-description {
-        font-size: 40px
+        font-size: 25px
     }
 }
 
@@ -5346,10 +5343,24 @@ a img {
     font-size: 15px;
     margin: 10px
 }
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1; /* Set opacity to 10% */
+    pointer-events: none; /* Ensure the image does not interfere with canvas interactions */
+}
 
 @media only screen and (min-width:550px) {
     .header-links .link {
-        font-size: 20px
+        font-size: 15px
     }
 }
 
@@ -5366,12 +5377,12 @@ a img {
 }
 
 .header-icons .icon {
-    height: 20px;
+    height: 15px;
     padding: 10px;
-    border-radius: 50%;
+    border-radius: 40%;
     border: 2px solid #fff;
     transition: all .7s;
-    width: 20px;
+    width: 15px;
     font-size: 20px;
     margin: 5px
 }
@@ -5440,7 +5451,7 @@ a img {
 
 .user {
     text-align: center;
-    font-size: 60px;
+    font-size: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
