@@ -11,7 +11,7 @@
     <div id="chat-container">
         <div id="chat-box">
             <div id="chat-content"></div>
-            <input type="text" id="chat-input" placeholder="Who is Saksham?">
+            <input type="text" id="chat-input" placeholder="Ask me about my resume...">
             <button id="send-btn">Send</button>
         </div>
     </div>
@@ -32,12 +32,14 @@
   <!-- Keyword Metadata -->
   <meta name="keywords" content="Saksham Adhikari" />
   <!-- Webpage Logo -->
-  <link rel="shortcut icon" href="assets/img/favicon-32x32.ico"/>
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" />
   <!-- Webpage Title -->
   <title>Saksham Adhikari</title>
 
   <!-- Import CSS: Main Stylesheet -->
   <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
 </head>
 
 <body>
@@ -56,12 +58,12 @@
           <i class="icon fa fa-github-alt" aria-hidden="true"></i>
         </a>
         <a aria-label="My Résumé" target="_blank"
-          href="https://drive.google.com/file/d/1upbxkFacF1BSUS2LOynLCqyokB6PucUI/view?usp=sharing">
+          href="https://drive.google.com/file/d/1BG9vFtwXMKky9N3FdrVLf2RHaGpy-G4Z/view?usp=sharing">
           <i class="icon fa fa fa-file-pdf-o" aria-hidden="true"></i>
         </a>
         <a aria-label="Send Email" href="mailto:pqo14@txstate.edu" target="_blank"><i
             class="icon fa fa-envelope"></i></a>
-        <a aria-label="Website" href="https://thefinfinity.com/" target="_blank"><i
+            <a aria-label="Website" href="https://thefinfinity.com/" target="_blank"><i
               class="icon fa fa-globe"></i></a>
       </div>
       <div class="header-links">
@@ -143,72 +145,95 @@
   </section>
 
      <!-- Projects Section -->
- 
 <section id="projects">
-    <div class="user-details">
-        <h1>Featured Projects</h1>
+  <div class="user-details">
+      <h1>Featured Projects</h1>
+  </div>
+
+  <div class="project-container">
+      <div class="project-card left">
+          <div class="project-image-container">
+              <a href="https://sql-db.streamlit.app/" target="_blank">
+                  <img src="https://github.com/Tar-ive/sql_query_app/raw/master/sql-query1.png" alt="Interactive SQL Query Application" class="project-image">
+              </a>
+          </div>
+          <div class="project-info">
+              <h3>Interactive SQL Query Application</h3>
+              <i class="devicon-python-plain colored project-icon"></i>
+              <i class="devicon-mysql-plain-wordmark colored project-icon"></i>
+              <img src="assets/img/svg/streamlit-logo-primary-colormark-darktext.svg" alt="Streamlit" class="custom-icon-streamlit">
+              <img src="assets/img/svg/langchain-seeklogo.svg" alt="LangChain" class="custom-icon">
+              <p>The Interactive SQL Query Application is a Streamlit app allowing users to interact with SQL databases via a user-friendly interface.</p>
+              <div class="project-links">
+                  <a href="https://sql-db.streamlit.app/" target="_blank">Streamlit App</a>
+                  <a href="https://github.com/Tar-ive/sql_query_app" target="_blank">GitHub Code</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="project-card right">
+          <div class="project-image-container">
+              <a href="https://evs-texas.streamlit.app/" target="_blank">
+                  <img src="assets/img/webp/Screenshot 2024-06-13 204129.png" alt="EVTX Project" class="project-image">
+              </a>
+          </div>
+          <div class="project-info">
+              <h3>EVTX Project</h3>
+              <i class="devicon-python-plain colored project-icon"></i>
+              <img src="assets/img/svg/streamlit-logo-primary-colormark-darktext.svg" alt="Streamlit" class="custom-icon-streamlit">
+              <img src="assets/img/svg/langchain-seeklogo.svg" alt="LangChain" class="custom-icon">
+              <p>The EVTX Project is an application developed with Streamlit, enabling users to interact with EVTX log files via a user-friendly interface.</p>
+              <div class="project-links">
+                  <a href="https://evs-texas.streamlit.app/" target="_blank">Streamlit App</a>
+                  <a href="https://github.com/Tar-ive/EVTX" target="_blank">GitHub Code</a>
+              </div>
+          </div>
+      </div>
+
+      <div class="project-card left">
+          <div class="project-image-container">
+              <a href="https://github.com/Tar-ive/Creditworthiness-Analysis/tree/main" target="_blank">
+                  <img src="https://storage.googleapis.com/kaggle-datasets-images/2289007/3846912/ad5e128929f5ac26133b67a6110de7c0/dataset-card.jpg?t=2022-06-22-14-33-45" alt="Creditworthiness-Analysis" class="project-image">
+              </a>
+          </div>
+          <div class="project-info">
+              <h3>Give Me Credit Analysis</h3>
+              <i class="devicon-kaggle-original-wordmark colored" style="font-size: 48px;"></i>
+              <i class="devicon-jupyter-plain colored" style="font-size: 48px;"></i>
+              <p>Worked with a dataset from Kaggle to analyse how likely a person is to go into financial trouble within the next 2 years. Used ML models to predict the credit worthiness of a person.</p>
+              <div class="project-links">
+                  <a href="https://github.com/Tar-ive/Creditworthiness-Analysis/tree/main" target="_blank">GitHub Code</a>
+              </div>
+          </div>
+      </div>
+      <div class="project-card right">
+        <div class="project-image-container">
+            <a href="https://credit-risk.netlify.app/" target="_blank">
+                <img src="assets\img\webp\Screenshot 2024-06-26 234616.png" alt="EVTX Project" class="project-image">
+            </a>
+        </div>
+        <div class="project-info">
+            <h3>Credit Risk Evaluation</h3>
+            <i class="devicon-python-plain colored project-icon"></i>
+            <i class="devicon-react-original colored" style="font-size: 48px;"></i>
+            <i class="devicon-docker-plain colored" style="font-size: 48px;"></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" class="custom-icon" />
+
+
+            <p>Credit Default Prediction is a web application that predicts whether a customer will default on their credit based on various financial factors. The application uses an XGBoost model to make predictions and presents the results in an easy-to-use web interface.</p>
+            <div class="project-links">
+                <a href="https://credit-risk.netlify.app/" target="_blank">Live View</a>
+                <a href="https://github.com/Tar-ive/credit-risk" target="_blank">GitHub Code</a>
+            </div>
+        </div>
     </div>
 
-    <div class="project-container">
-        <div class="project-card left">
-            <div class="project-image-container">
-                <a href="https://sql-db.streamlit.app/" target="_blank">
-                    <img src="https://github.com/Tar-ive/sql_query_app/raw/master/sql-query1.png" alt="Interactive SQL Query Application" class="project-image">
-                </a>
-            </div>
-            <div class="project-info">
-                <h3>Interactive SQL Query Application</h3>
-                <i class="devicon-python-plain colored project-icon"></i>
-                <i class="devicon-mysql-plain-wordmark colored project-icon"></i>
-                <img src="assets/img/svg/streamlit-logo-primary-colormark-darktext.svg" alt="Streamlit" class="custom-icon-streamlit">
-                <img src="assets/img/svg/langchain-seeklogo.svg" alt="LangChain" class="custom-icon">
-                <p>The Interactive SQL Query Application is a Streamlit app allowing users to interact with SQL databases via a user-friendly interface.</p>
-                <div class="project-links">
-                    <a href="https://sql-db.streamlit.app/" target="_blank">Streamlit App</a>
-                    <a href="https://github.com/Tar-ive/sql_query_app" target="_blank">GitHub Code</a>
-                </div>
-            </div>
-        </div>
 
-        <div class="project-card right">
-            <div class="project-image-container">
-                <a href="https://evs-texas.streamlit.app/" target="_blank">
-                    <img src="assets/img/webp/Screenshot 2024-06-13 204129.png" alt="EVTX Project" class="project-image">
-                </a>
-            </div>
-            <div class="project-info">
-                <h3>EVTX Project</h3>
-                <i class="devicon-python-plain colored project-icon"></i>
-                <img src="assets/img/svg/streamlit-logo-primary-colormark-darktext.svg" alt="Streamlit" class="custom-icon-streamlit">
-                <img src="assets/img/svg/langchain-seeklogo.svg" alt="LangChain" class="custom-icon">
-                <p>The EVTX Project is an application developed with Streamlit, enabling users to interact with EVTX log files via a user-friendly interface.</p>
-                <div class="project-links">
-                    <a href="https://evs-texas.streamlit.app/" target="_blank">Streamlit App</a>
-                    <a href="https://github.com/Tar-ive/EVTX" target="_blank">GitHub Code</a>
-                </div>
-            </div>
-        </div>
 
-        <div class="project-card left">
-            <div class="project-image-container">
-                <a href="https://github.com/Tar-ive/Creditworthiness-Analysis/tree/main" target="_blank">
-                    <img src="https://storage.googleapis.com/kaggle-datasets-images/2289007/3846912/ad5e128929f5ac26133b67a6110de7c0/dataset-card.jpg?t=2022-06-22-14-33-45" alt="Creditworthiness-Analysis" class="project-image">
-                </a>
-            </div>
-            <div class="project-info">
-                <h3>Give Me Credit Analysis</h3>
-                <i class="devicon-kaggle-original-wordmark colored" style="font-size: 48px;"></i>
-                <i class="devicon-jupyter-plain colored" style="font-size: 48px;"></i>
-                <p>Worked with a dataset from Kaggle to analyse how likely a person is to go into financial trouble within the next 2 years. Used ML models to predict the credit worthiness of a person.</p>
-                <div class="project-links">
-                    <a href="https://github.com/Tar-ive/Creditworthiness-Analysis/tree/main" target="_blank">GitHub Code</a>
-                </div>
-            </div>
-        </div>
-    </div>
+
+  </div>
 </section>
 
-    
 
 
     
