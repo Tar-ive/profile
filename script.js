@@ -26,7 +26,7 @@ async function sendMessage() {
     input.value = '';
 
     try {
-        const response = await fetch('https://spry-ether-426905-b1.uc.r.appspot.com/chat', {
+        const response = await fetch('https://profile-429301.uc.r.appspot.com/chat', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
