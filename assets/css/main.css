@@ -402,6 +402,42 @@ img {
     font-size: 1em; /* Adjusted font size */
     color: #666;
 }
+
+.tweet-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.twitter-tweet {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition */
+    width: 100%;
+    max-width: 900px; /* Increased size */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.twitter-tweet:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
 #chat-container {
     position: absolute;
     bottom: 0px;
@@ -414,6 +450,19 @@ img {
     z-index: 1000 !important; /* Ensure it is on top of other elements */
     margin: 0;
     padding: 0;
+}
+.tweet-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 550px;
+    width: 100%;
+    align-items: center;
+}
+
+.twitter-tweet {
+    width: 100%;
 }
 
 #chat-container p {
