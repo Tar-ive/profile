@@ -1,15 +1,4 @@
-// script.js
 
-document.getElementById('send-btn').addEventListener('click', async () => {
-    await sendMessage();
-});
-
-document.getElementById('chat-input').addEventListener('keypress', async (event) => {
-    if (event.key === 'Enter') {
-        event.preventDefault(); // Prevent the default action to avoid form submission
-        await sendMessage();
-    }
-});
 
 async function sendMessage() {
     const input = document.getElementById('chat-input');
@@ -26,19 +15,13 @@ async function sendMessage() {
     input.value = '';
 
     try {
-        const response = await fetch('https://profile-429301.uc.r.appspot.com/chat', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ query })
-        });
+        const response = await axios.post('https://profile-429301.uc.r.appspot.com/chat', { query });
 
-        if (!response.ok) {
+        if (response.status !== 200) {
             throw new Error('Network response was not ok');
         }
 
-        const data = await response.json();
+        const data = response.data;
 
         const botMessage = document.createElement('div');
         botMessage.textContent = `Saksham: ${data.answer}`;
@@ -53,4 +36,67 @@ async function sendMessage() {
     }
 
     chatContent.scrollTop = chatContent.scrollHeight;
+}
+document.addEventListener("DOMContentLoaded", function() {
+    axios({
+        method: 'get',
+        url: 'https://v1.nocodeapi.com/tarive/medium/vIQMTpqhzgUXgjOe',
+        params: {},
+    }).then(function (response) {
+        // Log the response data to inspect the structure
+        console.log('API response:', response.data);
+
+        const posts = response.data; // Adjust this if necessary based on console output
+        if (Array.isArray(posts) && posts.length > 0) {
+            // Render posts without repetition
+            renderMediumPosts(posts);
+        } else {
+            document.getElementById('jsonContent').innerHTML = '<p>No posts available.</p>';
+        }
+    }).catch(function (error) {
+        console.log('Error:', error);
+        document.getElementById('jsonContent').innerHTML = `<p>Error loading posts: ${error.message}</p>`;
+    });
+});
+
+function renderMediumPosts(posts) {
+    const jsonContent = document.getElementById('jsonContent');
+    jsonContent.innerHTML = ''; // Clear any existing content
+
+    posts.forEach(post => {
+        const postCard = document.createElement('div');
+        postCard.classList.add('medium-post-card', 'center'); // Updated class names
+
+        // Create and append the post title
+        const postTitle = document.createElement('h3');
+        postTitle.textContent = post.title;
+        const postInfo = document.createElement('div');
+        postInfo.classList.add('medium-post-info'); // Updated class names
+        postInfo.appendChild(postTitle);
+
+        // Extract and display the first 300 characters of the post content
+        let postContent = '';
+        if (post.content) {
+            postContent = post.content.substring(0, 300) + '...';
+        } else if (post.content_encoded) {
+            postContent = post.content_encoded.substring(0, 300) + '...';
+        }
+
+        const postDescription = document.createElement('p');
+        postDescription.innerHTML = postContent;
+        postInfo.appendChild(postDescription);
+
+        // Add "Read more" link
+        const postLink = document.createElement('a');
+        postLink.href = post.link;
+        postLink.textContent = 'Read more';
+        postLink.target = '_blank';
+        postInfo.appendChild(postLink);
+
+        // Append post info to the post card
+        postCard.appendChild(postInfo);
+
+        // Append the post card to the container
+        jsonContent.appendChild(postCard);
+    });
 }
