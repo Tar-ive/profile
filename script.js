@@ -40,7 +40,8 @@ async function sendMessage() {
 document.addEventListener("DOMContentLoaded", function() {
     axios({
         method: 'get',
-        url: 'https://v1.nocodeapi.com/tarive/medium/vIQMTpqhzgUXgjOe',
+        url:  "https://v1.nocodeapi.com/tarivee/medium/fOxBOpbWWxkJPYdG",
+        // https://v1.nocodeapi.com/tarive/medium/vIQMTpqhzgUXgjOe',
         params: {},
     }).then(function (response) {
         // Log the response data to inspect the structure
