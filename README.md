@@ -20,6 +20,7 @@ The chatbot is designed to provide personalized responses to questions about me.
 - **CSS**: For styling and enhancing the visual appearance of the website.
 - **JavaScript**: For adding interactivity and dynamic content.
 - **OpenAI API**: Integrated for the chatbot functionality to provide intelligent responses.
+- 
 
 ## Screenshots
 
