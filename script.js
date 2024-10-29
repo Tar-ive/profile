@@ -101,3 +101,13 @@ function renderMediumPosts(posts) {
         jsonContent.appendChild(postCard);
     });
 }
+
+function openModal(imageSrc, description) {
+    document.getElementById('modalImage').src = imageSrc;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('imageModal').style.display = 'flex';
+  }
+
+  function closeModal() {
+    document.getElementById('imageModal').style.display = 'none';
+  }
