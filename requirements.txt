@@ -1,9 +1,9 @@
-flask
-python-dotenv
-PyPDF2
-langchain_openai
-openai
-faiss-cpu
-langchain_community
-langchain
-flask-cors
+# flask
+# python-dotenv
+# PyPDF2
+# langchain_openai
+# openai
+# faiss-cpu
+# langchain_community
+# langchain
+# flask-cors
