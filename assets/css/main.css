@@ -5484,9 +5484,21 @@ a img {
 
 .down .icon:active,
 .down .icon:hover,
+
 .footer a:active,
 .footer a:hover {
     color: #006400
+    
+}
+
+.footer {
+    width: 150%;
+     /* Ensure the footer takes the full width */
+    background: #006400; /* Your existing background styles */
+    padding: 10px 0;
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
 }
 
 #about {
@@ -5698,6 +5710,7 @@ a img {
 
 .footer {
     background: #006400;
+    width: 100%;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #50C878, #006400);
     /* Chrome 10-25, Safari 5.1-6 */
@@ -5785,3 +5798,150 @@ a img {
     background: transparent;
     box-shadow: none;
 }
+
+.footer {
+    flex: 1; /* Allow the footer to grow and take available space */
+}
+/* Gallery Styles */
+#gallery {
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+  
+  #gallery h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .gallery-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .gallery-item:hover .gallery-overlay {
+    opacity: 1;
+  }
+  
+  .gallery-overlay h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .gallery-overlay p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80vh;
+  }
+  
+  .modal-content img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .modal-caption {
+    margin: 15px auto;
+    text-align: center;
+    color: #fff;
+    font-size: 1.1em;
+    max-width: 80%;
+  }
+  
+  .modal-close {
+    position: relative;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .modal-close:hover,
+  .modal-close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-nav {
+    position: relative;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .modal-prev {
+    left: 0;
+  }
+  
+  .modal-next {
+    right: 0;
+  }
+  
+  .modal-nav:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
